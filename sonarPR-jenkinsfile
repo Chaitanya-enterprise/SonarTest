@@ -17,12 +17,7 @@ pipeline {
 						
 						
 						
-						-Dsonar.pullrequest.base=main
-						-Dsonar.pullrequest.key=${env.CHANGE_ID} \
-						-Dsonar.pullrequest.branch=${env.CHANGE_BRANCH}"
-						-Dsonar.projectKey=Chaitanya-enterprise_SonarTest
-						-Dsonar.sources=.
-						-Dsonar.projectVersion=1.0
+						-Dsonar.pullrequest.base=main -Dsonar.pullrequest.key=${env.CHANGE_ID}  -Dsonar.pullrequest.branch=${env.CHANGE_BRANCH}" -Dsonar.projectKey=Chaitanya-enterprise_SonarTest -Dsonar.sources=. -Dsonar.projectVersion=1.0
                     }
 			
 			}
