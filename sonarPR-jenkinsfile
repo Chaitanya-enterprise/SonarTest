@@ -18,8 +18,7 @@ pipeline {
 		sh '''$SONAR_SCANNER_TOOL \
 		-Dsonar.pullrequest.base=main -Dsonar.pullrequest.key=18 \
 		-Dsonar.pullrequest.branch=sonarTest \
-		-Dsonar.projectKey=Chaitanya-enterprise_SonarTest
-		-Dsonar.projectName=Chaitanya-enterprise_SonarTest\
+		-Dsonar.projectKey=Chaitanya-enterprise_SonarTest \
 		-Dsonar.sources=. \
 		-Dsonar.projectVersion=1.0 \
 		-Dsonar.pullrequest.provider=github \
