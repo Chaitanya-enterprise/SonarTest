@@ -6,6 +6,9 @@ pipeline {
 		  
 	stages {
         stage('Sonar')	{
+	
+	steps
+	{
 			script {
                     
                     withSonarQubeEnv('sonar_scanner') {
@@ -20,7 +23,7 @@ pipeline {
 		-Dsonar.projectVersion=1.0'''
                     }
 			
-		}		
+	}	}		
 }
 }
 }
