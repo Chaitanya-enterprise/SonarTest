@@ -21,10 +21,10 @@ pipeline {
 		-Dsonar.pullrequest.branch=sonarTest \
 		-Dsonar.projectKey=Chaitanya-enterprise_SonarTest \
 		-Dsonar.sources=. \
-		-Dsonar.projectVersion=1.0''' \
+		-Dsonar.projectVersion=1.0 \
 		-Dsonar.pullrequest.provider=github \
 		-Dsonar.pullrequest.github.repository=Chaitanya-Enterprise/SonarTest \
-		-Dsonar.organization=Chaintaya-Enterprise \
+		-Dsonar.organization=Chaitanya-Enterprise'''
                     }
 			
 	}	}		
