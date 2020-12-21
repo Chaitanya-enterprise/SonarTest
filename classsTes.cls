@@ -7,6 +7,9 @@ public class ApexClass
        s=s;
 
      s=s;
+     
+     String k='sdfs';
+     k=k;
        
 
     }
