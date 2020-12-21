@@ -16,10 +16,10 @@ pipeline {
 						
 						
 		sh '''$SONAR_SCANNER_TOOL \
-		-Dsonar.pullrequest.base=main -Dsonar.pullrequest.key=18
-		-Dsonar.pullrequest.branch=sonarTest 
-		-Dsonar.projectKey=Chaitanya-enterprise_SonarTest 
-		-Dsonar.sources=. 
+		-Dsonar.pullrequest.base=main -Dsonar.pullrequest.key=18 \
+		-Dsonar.pullrequest.branch=sonarTest \
+		-Dsonar.projectKey=Chaitanya-enterprise_SonarTest \
+		-Dsonar.sources=. \
 		-Dsonar.projectVersion=1.0'''
                     }
 			
