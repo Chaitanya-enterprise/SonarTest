@@ -5,7 +5,12 @@ public class ApexClass
     {
        String s ='ssf';
        s=s;
+
      s=s;
+     
+     String k='sdfs';
+     k=k;
        
+
     }
 }
