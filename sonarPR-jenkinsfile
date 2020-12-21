@@ -4,7 +4,8 @@ pipeline {
     agent any 
 	
 		  
-			
+	stages {
+        stage('Sonar')	{
 			script {
                     
                     withSonarQubeEnv('sonar_scanner') {
@@ -20,7 +21,8 @@ pipeline {
                     }
 			
 		}		
-
+}
+}
 }
 
 
