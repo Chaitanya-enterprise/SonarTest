@@ -1,0 +1,34 @@
+pipeline {
+
+    // Run on any agent 
+    agent any 
+	
+	 stage ("Static Code Analysis") 
+		{		  
+		
+		def urlcomponents = env.CHANGE_URL.split("/")
+		def org = urlcomponents[3]
+		def repo = urlcomponents[4]
+			steps {    
+			
+			script {
+                    
+                    withSonarQubeEnv('sonar_scanner') {
+						
+						
+						
+						-Dsonar.pullrequest.base=main
+						-Dsonar.pullrequest.key=${env.CHANGE_ID} \
+						-Dsonar.pullrequest.branch=${env.CHANGE_BRANCH}"
+						-Dsonar.projectKey=Chaitanya-enterprise_SonarTest
+						-Dsonar.sources=.
+						-Dsonar.projectVersion=1.0
+                    }
+			
+			}
+		}
+}
+
+}
+
+
