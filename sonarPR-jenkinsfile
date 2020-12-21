@@ -5,7 +5,27 @@ pipeline {
 	
 		  
 	stages {
+	
+	stage("Code Checkout from Github") {
+  steps {
+
+   git branch: 'sonarTest',
+
+
+    url: 'https://github.com/Chaitanya-enterprise/SonarTest.git'
+
+  }
+
+ }
+	
+	
+	
+	
+	
         stage('Sonar')	{
+	
+	
+	
 	
 	steps
 	{
@@ -27,6 +47,8 @@ pipeline {
                     }
 			
 	}	}		
+
+
 }
 }
 }
